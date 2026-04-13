@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Playground</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    #output { margin-top: 20px; padding: 10px; background: #f0f0f0; }
+  </style>
+</head>
+<body>
+
+<h1>Интерактивная тестовая площадка</h1>
+
+<input id="input" placeholder="Введите текст" />
+<button onclick="run()">Запустить</button>
+
+<div id="output"></div>
+
+<script>
+function run() {
+  const value = document.getElementById('input').value;
+  document.getElementById('output').innerText = "Вы ввели: " + value;
+}
+</script>
+
+</body>
+</html>
